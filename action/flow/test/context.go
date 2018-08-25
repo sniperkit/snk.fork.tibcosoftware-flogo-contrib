@@ -1,9 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package test
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 )
 
 //todo needs to move to lib
@@ -15,7 +21,7 @@ func NewTestActivityContext(metadata *activity.Metadata) *TestActivityContext {
 
 	ac := &TestActivityHost{
 		HostId:     "1",
-		HostRef:    "github.com/TIBCOSoftware/flogo-contrib/action/flow",
+		HostRef:    "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow",
 		IoMetadata: &data.IOMetadata{Input: input, Output: output},
 		HostData:   data.NewSimpleScope(nil, nil),
 	}

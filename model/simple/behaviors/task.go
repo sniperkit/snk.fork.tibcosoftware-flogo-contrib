@@ -1,8 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package behaviors
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package aggregator
 
-import "sync"
+import (
+	"sync"
+)
 
 type MovingAverage struct {
 	windowSize   int

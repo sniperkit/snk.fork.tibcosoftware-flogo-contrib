@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package functions
 
 import (
@@ -35,7 +40,7 @@ func AddSampleSum(a, b interface{}) interface{} {
 	panic("invalid input")
 }
 
-func AggregateBlocksSum(blocks []interface{}, start int,  size int) interface{} {
+func AggregateBlocksSum(blocks []interface{}, start int, size int) interface{} {
 
 	switch blocks[0].(type) {
 	case int:
@@ -96,5 +101,3 @@ func sumFloatArray(blocks []interface{}) interface{} {
 
 	return total
 }
-
-

@@ -1,9 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package model
 
 import (
 	"sync"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/util"
 )
 
 var (

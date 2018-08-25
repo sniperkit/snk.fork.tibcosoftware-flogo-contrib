@@ -1,8 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package test
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model/simple"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model/simple"
 )
 
 func init() {

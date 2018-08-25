@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
@@ -6,9 +11,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/service"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/TIBCOSoftware/flogo-lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/service"
 )
 
 // StateRecorder is the interface that describes a service that can record

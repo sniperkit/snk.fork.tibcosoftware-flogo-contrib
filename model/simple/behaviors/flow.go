@@ -1,9 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package behaviors
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 var log = logger.GetLogger("flowmodel-simple")

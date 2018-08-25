@@ -1,12 +1,18 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package subflow
 
 import (
 	"errors"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/instance"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
 )
 
 // log is the default package logger

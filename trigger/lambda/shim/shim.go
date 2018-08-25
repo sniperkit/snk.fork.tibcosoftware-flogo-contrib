@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
@@ -5,10 +10,11 @@ import (
 	"encoding/json"
 	"flag"
 
-	fl "github.com/TIBCOSoftware/flogo-contrib/trigger/lambda"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-lambda-go/lambdacontext"
+
+	fl "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/lambda"
 )
 
 const (

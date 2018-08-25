@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package rest
 
 import (
@@ -16,7 +21,7 @@ func getTestJsonMetadata() string {
 
 const testConfig string = `{
   "id": "flogo-rest",
-  "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/rest",
+  "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/rest",
   "settings": {
     "port": "8091"
   },

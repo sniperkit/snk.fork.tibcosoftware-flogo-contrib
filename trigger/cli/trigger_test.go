@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package cli
 
 import (
@@ -14,10 +19,9 @@ func getTestJsonMetadata() string {
 	return string(jsonMetadataBytes)
 }
 
-
 const testConfig string = `{
   "id": "flogo-cli",
-  "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/cli",
+  "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/cli",
   "handlers": [
     {
       "actionId": "",

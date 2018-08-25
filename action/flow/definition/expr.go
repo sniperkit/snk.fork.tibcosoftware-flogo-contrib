@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package definition
 
-import "github.com/TIBCOSoftware/flogo-lib/core/data"
+import (
+	"github.com/TIBCOSoftware/flogo-lib/core/data"
+)
 
 // LinkExprManager interface that defines a Link Expression Manager
 type LinkExprManager interface {

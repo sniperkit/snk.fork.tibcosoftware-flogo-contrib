@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package aggregate
 
 import (
@@ -6,11 +11,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/aggregate/window"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/flogo-oss/stream/pipeline/support"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/aggregate/window"
 )
 
 // activityLogger is the default logger for the Aggregate Activity
@@ -39,7 +45,6 @@ type Settings struct {
 	Resolution         int
 	AdditionalSettings map[string]string
 }
-
 
 func init() {
 	activityLogger.SetLogLevel(logger.InfoLevel)

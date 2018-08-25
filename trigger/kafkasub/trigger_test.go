@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package kafkasub
 
 /*
@@ -21,11 +26,11 @@ import (
 	"context"
 	"fmt"
 	"io/ioutil"
+	golog "log"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
-	golog "log"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"

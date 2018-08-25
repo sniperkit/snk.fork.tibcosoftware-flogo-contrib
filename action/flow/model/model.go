@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package model
 
 // FlowModel defines the execution Model for a Flow.  It contains the

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package kafkapub
 
 import (
@@ -5,8 +10,9 @@ import (
 	"log"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 /*

@@ -1,13 +1,18 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package linker
 
 import (
 	"fmt"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/core/mapper/exprmapper"
+	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 )
 
 var log = logger.GetLogger("linker")

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
@@ -5,12 +10,13 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/TIBCOSoftware/flogo-lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
 )
 
 type IndependentInstance struct {
@@ -400,8 +406,8 @@ func (inst *IndependentInstance) HandleGlobalError(containerInst *Instance, err 
 
 				//inst.scheduleEval(host)
 			}
-		}  else {
-			 inst.returnError = err
+		} else {
+			inst.returnError = err
 		}
 	}
 }
@@ -501,7 +507,7 @@ func (e *ActivityEvalError) Error() string {
 //////////////
 // todo fix the following
 
-func getFlowModel(flow *definition.Definition) *model.FlowModel{
+func getFlowModel(flow *definition.Definition) *model.FlowModel {
 	if flow.ModelID() == "" {
 		return model.Default()
 	} else {
@@ -511,12 +517,12 @@ func getFlowModel(flow *definition.Definition) *model.FlowModel{
 }
 
 //// Restart indicates that this FlowInstance was restarted
-func (inst *IndependentInstance) Restart(id string, manager *support.FlowManager)  error {
+func (inst *IndependentInstance) Restart(id string, manager *support.FlowManager) error {
 	inst.id = id
 	var err error
 	inst.flowDef, err = manager.GetFlow(inst.flowURI)
 
-	if err!= nil {
+	if err != nil {
 		return err
 	}
 	if inst.flowDef == nil {
@@ -537,7 +543,7 @@ func (inst *IndependentInstance) init(flowInst *Instance) {
 		v.task = flowInst.flowDef.GetTask(v.taskID)
 	}
 
-	for _, v := range flowInst.linkInsts  {
+	for _, v := range flowInst.linkInsts {
 		v.flowInst = flowInst
 		v.link = flowInst.flowDef.GetLink(v.linkID)
 	}

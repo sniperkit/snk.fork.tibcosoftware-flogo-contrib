@@ -1,9 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package framework
 
 import (
 	"sync"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/model"
 )
 
 var (

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package functions
 
 func AddSampleMax(a, b interface{}) interface{} {
@@ -22,7 +27,7 @@ func AddSampleMax(a, b interface{}) interface{} {
 	case []int:
 		y := b.([]int)
 		for idx, value := range x {
-			if  y[idx] > value {
+			if y[idx] > value {
 				x[idx] = y[idx]
 			}
 		}
@@ -30,7 +35,7 @@ func AddSampleMax(a, b interface{}) interface{} {
 	case []float64:
 		y := b.([]float64)
 		for idx, value := range x {
-			if  y[idx] > value {
+			if y[idx] > value {
 				x[idx] = y[idx]
 			}
 		}

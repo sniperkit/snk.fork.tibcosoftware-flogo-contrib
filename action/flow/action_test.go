@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flow
 
 import (
@@ -5,16 +10,16 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/instance"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/tester"
 	"github.com/TIBCOSoftware/flogo-lib/app/resource"
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/engine/runner"
 	"github.com/stretchr/testify/assert"
 
-	_ "github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
+	_ "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/tester"
 )
 
 //TestInitNoFlavorError
@@ -68,7 +73,7 @@ func TestInitURIFlowFlavorError(t *testing.T) {
 
 var testFlowActionCfg = `{
   "id": "flow",
-  "ref": "github.com/TIBCOSoftware/flogo-contrib/action/flow",
+  "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow",
   "metadata": {
     "input": [],
     "output": []
@@ -91,7 +96,7 @@ var testFlowActionCfg = `{
           "description": "Simple Log Activity",
           "type": 1,
           "activityType": "tibco-log",
-          "activityRef": "github.com/TIBCOSoftware/flogo-contrib/activity/log",
+          "activityRef": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/log",
           "attributes": [
             {
               "name": "message",
@@ -119,7 +124,7 @@ var testFlowActionCfg = `{
           "description": "Simple Log Activity",
           "type": 1,
           "activityType": "tibco-log",
-          "activityRef": "github.com/TIBCOSoftware/flogo-contrib/activity/log",
+          "activityRef": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/log",
           "attributes": [
             {
               "name": "message",

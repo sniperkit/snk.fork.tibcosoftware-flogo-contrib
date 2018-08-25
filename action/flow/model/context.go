@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package model
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 )
 
 // FlowContext is the execution context of the Flow when executing

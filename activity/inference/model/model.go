@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package model
 
 import (
@@ -5,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/utils"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/utils"
 )
 
 // Framework interface used to implement specific ml framework implementations

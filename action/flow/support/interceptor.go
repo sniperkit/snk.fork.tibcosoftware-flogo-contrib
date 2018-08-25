@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package support
 
-import "github.com/TIBCOSoftware/flogo-lib/core/data"
+import (
+	"github.com/TIBCOSoftware/flogo-lib/core/data"
+)
 
 // Interceptor contains a set of task interceptor, this can be used to override
 // runtime data of an instance of the corresponding Flow.  This can be used to

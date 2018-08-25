@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package channel
 
 import (
@@ -5,9 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/engine/channels"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 var activityMetadata *activity.Metadata
@@ -70,7 +76,7 @@ func TestEval(t *testing.T) {
 
 	channels.Start()
 
-	time.Sleep(100*time.Millisecond)
+	time.Sleep(100 * time.Millisecond)
 
 	if found != expected {
 		t.Errorf("Expected %s, found %s", expected, found)

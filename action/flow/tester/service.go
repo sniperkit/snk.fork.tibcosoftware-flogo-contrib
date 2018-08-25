@@ -1,14 +1,20 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package tester
 
 import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/instance"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/service"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/TIBCOSoftware/flogo-lib/util"
 	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/service"
 )
 
 // RestEngineTester is default REST implementation of the EngineTester

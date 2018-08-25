@@ -1,10 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package filter
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"fmt"
+
+	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+	"github.com/TIBCOSoftware/flogo-lib/core/data"
+	"github.com/TIBCOSoftware/flogo-lib/logger"
 )
 
 // activityLogger is the default logger for the Filter Activity

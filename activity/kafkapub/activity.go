@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package kafkapub
 
 import (
@@ -8,7 +13,6 @@ import (
 	"os"
 	"strconv"
 	"strings"
-
 	"sync"
 
 	"github.com/Shopify/sarama"

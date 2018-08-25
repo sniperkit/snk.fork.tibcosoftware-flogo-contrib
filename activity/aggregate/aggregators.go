@@ -1,10 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package aggregate
 
 import (
 	"fmt"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/aggregate/window"
-	"github.com/TIBCOSoftware/flogo-contrib/activity/aggregate/window/functions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/aggregate/window"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/aggregate/window/functions"
 )
 
 func NewTumblingWindow(function string, settings *window.Settings) (window.Window, error) {

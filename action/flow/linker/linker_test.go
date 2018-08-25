@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package linker
 
 import (
@@ -5,9 +10,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 )
 
 const defJSON = `

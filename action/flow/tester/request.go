@@ -1,18 +1,24 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package tester
 
 import (
 	"context"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/instance"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/engine/runner"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
 )
 
 const (
-	FLOW_REF = "github.com/TIBCOSoftware/flogo-contrib/action/flow"
+	FLOW_REF = "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow"
 )
 
 // RequestProcessor processes request objects and invokes the corresponding

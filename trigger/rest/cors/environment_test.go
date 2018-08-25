@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright (c) 2015 TIBCO Software Inc.
 // All Rights Reserved.
 package cors
 
 import (
-	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 // Test GetCorsAllowOrigin method

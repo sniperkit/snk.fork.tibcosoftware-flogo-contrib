@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package util
 
 var modelValidators = make(map[string]ModelValidator)

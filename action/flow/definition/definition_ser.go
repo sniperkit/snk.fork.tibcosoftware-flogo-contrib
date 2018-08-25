@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package definition
 
 import (
@@ -6,11 +11,12 @@ import (
 	"strconv"
 	"strings"
 
-	flowutil "github.com/TIBCOSoftware/flogo-contrib/action/flow/util"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/TIBCOSoftware/flogo-lib/util"
+
+	flowutil "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/util"
 )
 
 // DefinitionRep is a serializable representation of a flow Definition

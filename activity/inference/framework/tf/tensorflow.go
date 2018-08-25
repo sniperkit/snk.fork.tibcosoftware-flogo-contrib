@@ -1,7 +1,12 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package tf
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/framework"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/framework"
 )
 
 // TensorflowModel is

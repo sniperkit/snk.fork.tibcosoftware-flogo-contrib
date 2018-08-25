@@ -1,10 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package aggregate
 
 import (
 	"io/ioutil"
 	"testing"
 
-		"github.com/TIBCOSoftware/flogo-lib/core/activity"
+	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 )
 
 var activityMetadata *activity.Metadata

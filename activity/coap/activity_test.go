@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package coap
 
 import (
@@ -6,7 +11,8 @@ import (
 	"testing"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	//"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
+
+	//"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 	"io/ioutil"
 )
 

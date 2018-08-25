@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package activity
 
 import (
@@ -13,7 +18,7 @@ import (
 )
 
 const (
-	ACTION_REF = "github.com/TIBCOSoftware/flogo-contrib/action/activity"
+	ACTION_REF = "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/activity"
 )
 
 type ActivityAction struct {
@@ -23,7 +28,7 @@ type ActivityAction struct {
 }
 
 type actionInstance struct {
-	act              activity.Activity
+	act activity.Activity
 
 	inputs      map[string]*data.Attribute
 	outputScope *data.FixedScope

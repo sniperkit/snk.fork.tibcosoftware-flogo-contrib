@@ -1,9 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package tf
 
 import (
 	"fmt"
 
-	tensorflow "github.com/TIBCOSoftware/flogo-contrib/activity/inference/tensorflow/tensorflow/core/example"
+	tensorflow "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/tensorflow/tensorflow/core/example"
 )
 
 func Example(features map[string]interface{}) (*tensorflow.Example, error) {

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package subflow
 
 import (
@@ -6,13 +11,14 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow"
 	"github.com/TIBCOSoftware/flogo-lib/app/resource"
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/engine/runner"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow"
 )
 
 var activityMetadata *activity.Metadata
@@ -40,7 +46,7 @@ var jsonFlowRes1 = `{
     {
       "id": "runFlow",
       "activity": {
-        "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/subflow",
+        "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/subflow",
         "settings": {
           "flowURI": "res://flow/flow2"
         },
@@ -105,7 +111,7 @@ var jsonFlow1 = `{
     {
       "id": "runFlow",
       "activity": {
-        "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/subflow",
+        "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/subflow",
         "settings": {
           "flowURI": "res://flow:flow2"
         },

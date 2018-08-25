@@ -1,13 +1,18 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package lambda
 
 import (
 	"encoding/json"
+	"io/ioutil"
 	"testing"
 
-	"io/ioutil"
-
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 var activityMetadata *activity.Metadata

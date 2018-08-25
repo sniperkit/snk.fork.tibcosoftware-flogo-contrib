@@ -1,13 +1,20 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package couchbase
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"io/ioutil"
 	"log"
 	"math/rand"
 	"testing"
 	"time"
+
+	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 /*

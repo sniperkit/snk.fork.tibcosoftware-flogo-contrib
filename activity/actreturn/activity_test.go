@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package actreturn
 
 import (
@@ -5,10 +10,11 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 var activityMetadata *activity.Metadata
@@ -82,7 +88,7 @@ func newActionContext() *test.TestActivityHost {
 
 	ac := &test.TestActivityHost{
 		HostId:     "1",
-		HostRef:    "github.com/TIBCOSoftware/flogo-contrib/action/flow",
+		HostRef:    "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow",
 		IoMetadata: &data.IOMetadata{Input: input, Output: output},
 		HostData:   data.NewSimpleScope(nil, nil),
 	}

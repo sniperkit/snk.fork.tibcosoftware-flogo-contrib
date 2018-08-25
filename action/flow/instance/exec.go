@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
 )
 
 const (

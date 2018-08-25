@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package coap
 
-import "io/ioutil"
+import (
+	"io/ioutil"
+)
 
 //"encoding/json"
 //"net/http"
@@ -21,7 +28,7 @@ func getTestJsonMetadata() string {
 
 const testConfig string = `{
   "id": "flogo-coap",
-  "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/coap",
+  "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/coap",
   "settings": {
     "port": "5683"
   },

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package tf
 
 import (
@@ -5,10 +10,11 @@ import (
 	"io/ioutil"
 	"strings"
 
-	models "github.com/TIBCOSoftware/flogo-contrib/activity/inference/model"
-	tfpb "github.com/TIBCOSoftware/flogo-contrib/activity/inference/tensorflow/tensorflow/core/protobuf"
 	"github.com/golang/protobuf/proto"
 	tf "github.com/tensorflow/tensorflow/tensorflow/go"
+
+	models "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/model"
+	tfpb "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/tensorflow/tensorflow/core/protobuf"
 )
 
 // Load implements the backend framework specifics for loading a saved model

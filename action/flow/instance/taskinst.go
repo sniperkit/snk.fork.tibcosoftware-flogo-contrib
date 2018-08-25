@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
@@ -5,12 +10,13 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/core/mapper/exprmapper"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 func NewTaskInst(inst *Instance, task *definition.Task) *TaskInst {
@@ -170,7 +176,6 @@ func (ti *TaskInst) GetSharedTempData() map[string]interface{} {
 	//todo implement
 	return nil
 }
-
 
 // TaskName implements activity.Context.TaskName method
 // Deprecated

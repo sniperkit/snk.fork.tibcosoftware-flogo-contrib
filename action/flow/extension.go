@@ -1,12 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flow
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/instance"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model/simple"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/tester"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model/simple"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/tester"
 )
 
 // Provides the different extension points to the FlowBehavior Action

@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package support
 
-import "github.com/TIBCOSoftware/flogo-lib/core/data"
+import (
+	"github.com/TIBCOSoftware/flogo-lib/core/data"
+)
 
 // Patch contains a set of task patches for a Flow Patch, this
 // can be used to override the default data and mappings of a Flow

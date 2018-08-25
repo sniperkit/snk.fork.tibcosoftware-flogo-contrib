@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mongodb
 
 import (
@@ -7,13 +12,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/mongodb/mongo-go-driver/bson"
+	"github.com/mongodb/mongo-go-driver/bson/objectid"
 	"github.com/mongodb/mongo-go-driver/mongo"
 	"github.com/stretchr/testify/assert"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/mongodb/mongo-go-driver/bson/objectid"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 const (

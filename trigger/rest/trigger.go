@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package rest
 
 import (
@@ -10,11 +15,12 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-contrib/trigger/rest/cors"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/rest/cors"
 )
 
 const (

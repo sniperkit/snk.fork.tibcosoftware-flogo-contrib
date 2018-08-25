@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package definition
 
 // ExtensionProvider is the interface that describes an object

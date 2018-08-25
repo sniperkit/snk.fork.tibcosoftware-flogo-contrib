@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package timer
 
 import (
@@ -247,13 +252,13 @@ func getInitialStartInSeconds(endpoint *trigger.Handler) int {
 	log.Debug("Current time: ", currentTime)
 	log.Debug("Setting start time: ", triggerDate)
 	duration := time.Since(triggerDate)
-    durSeconds := duration.Seconds()
-    if durSeconds < 0 {
-    	//Future date
-	    return int(math.Abs(durSeconds))
-    } else {
-    	// Past date
-	   return 0
+	durSeconds := duration.Seconds()
+	if durSeconds < 0 {
+		//Future date
+		return int(math.Abs(durSeconds))
+	} else {
+		// Past date
+		return 0
 	}
 }
 

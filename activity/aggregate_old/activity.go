@@ -1,13 +1,19 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package aggregate_old
 
 import (
 	"errors"
 	"sync"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/aggregate_old/aggregator"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/aggregate_old/aggregator"
 )
 
 // activityLogger is the default logger for the Aggregate Activity

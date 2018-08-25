@@ -1,10 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"fmt"
 	"os"
 
-	"github.com/TIBCOSoftware/flogo-contrib/trigger/cli"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/cli"
 )
 
 func main() {

@@ -1,7 +1,12 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package model
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 )
 
 // TaskEntry is a struct used to specify what Task to

@@ -1,10 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package definition
 
 import (
+	"sync"
+
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/core/mapper"
-	"sync"
 )
 
 // MapperDef represents a Mapper, which is a collection of mappings
@@ -111,8 +117,6 @@ type DefaultActivityOutputMapper struct {
 	task *Task
 
 	mutex sync.Mutex
-
-
 }
 
 func (m *DefaultActivityOutputMapper) Apply(inputScope data.Scope, outputScope data.Scope) error {
@@ -128,7 +132,7 @@ func (m *DefaultActivityOutputMapper) Apply(inputScope data.Scope, outputScope d
 			if dynamicIO != nil {
 				m.outputMetadata = dynamicIO.Output
 			} else {
-				m.outputMetadata =act.Metadata().Output
+				m.outputMetadata = act.Metadata().Output
 			}
 		}
 

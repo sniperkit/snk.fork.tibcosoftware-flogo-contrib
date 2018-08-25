@@ -1,9 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package simple
 
 import (
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
-	"github.com/TIBCOSoftware/flogo-contrib/model/simple/behaviors"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/model/simple/behaviors"
 )
 
 // log is the default package logger

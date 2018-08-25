@@ -1,10 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package wsmessage
 
 import (
+	"io/ioutil"
 	"testing"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"io/ioutil"
 )
 
 var activityMetadata *activity.Metadata

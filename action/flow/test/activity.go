@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package test
 
 import (
@@ -50,7 +55,6 @@ func (a *LogActivity) Eval(context activity.Context) (done bool, err error) {
 	return true, nil
 }
 
-
 type CounterActivity struct {
 	metadata *activity.Metadata
 	counters map[string]int
@@ -67,7 +71,7 @@ func NewCounterActivity() activity.Activity {
 		"value": data.NewZeroAttribute("value", data.TypeInteger),
 	}
 	metadata.Output = output
-	return &CounterActivity{metadata: metadata, counters:make(map[string]int)}
+	return &CounterActivity{metadata: metadata, counters: make(map[string]int)}
 }
 
 // Metadata returns the activity's metadata

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
@@ -5,12 +10,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-
-	_ "github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
+	_ "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 func TestMain(m *testing.M) {

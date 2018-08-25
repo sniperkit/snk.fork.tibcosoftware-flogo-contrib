@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package functions
 
 func AggregateBlocksAvg(blocks []interface{}, start int, size int) interface{} {
@@ -30,7 +35,7 @@ func avgFloat(blocks []interface{}, size int) interface{} {
 	for _, block := range blocks {
 		total += block.(float64)
 	}
-	return total / float64(len(blocks) * size)
+	return total / float64(len(blocks)*size)
 }
 
 func avgIntArray(blocks []interface{}, size int) interface{} {
@@ -46,7 +51,7 @@ func avgIntArray(blocks []interface{}, size int) interface{} {
 	}
 
 	for i, val := range result {
-		result[i] = val / (len(blocks)*size)
+		result[i] = val / (len(blocks) * size)
 	}
 
 	return result
@@ -64,7 +69,7 @@ func avgFloatArray(blocks []interface{}, size int) interface{} {
 	}
 
 	for i, val := range result {
-		result[i] = val / float64(len(blocks) * size)
+		result[i] = val / float64(len(blocks)*size)
 	}
 
 	return result

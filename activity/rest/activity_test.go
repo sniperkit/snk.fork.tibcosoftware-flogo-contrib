@@ -1,14 +1,19 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package rest
 
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"testing"
 
-	"io/ioutil"
-
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 const reqPostStr string = `{
@@ -108,7 +113,7 @@ func TestSimpleGetWithHeaders(t *testing.T) {
 
 func TestParamGet(t *testing.T) {
 
-	act := activity.Get("github.com/TIBCOSoftware/flogo-contrib/activity/rest")
+	act := activity.Get("github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/rest")
 	tc := test.NewTestActivityContext(act.Metadata())
 
 	//setup attrs

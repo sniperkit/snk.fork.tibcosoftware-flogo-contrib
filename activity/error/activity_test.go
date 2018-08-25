@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package error
 
 import (
+	"io/ioutil"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"io/ioutil"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )
 
 var activityMetadata *activity.Metadata

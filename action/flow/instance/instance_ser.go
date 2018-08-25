@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
 	"encoding/json"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

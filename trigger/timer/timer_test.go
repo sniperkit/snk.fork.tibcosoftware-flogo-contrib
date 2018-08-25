@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package timer
 
 import (
@@ -8,10 +13,12 @@ import (
 	"io/ioutil"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
+
 	//"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 	"encoding/json"
-	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 	"testing"
+
+	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 )
 
 var jsonTestMetadata = getTestJsonMetadata()

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package channel
 
 import (
@@ -32,7 +37,7 @@ func getTestMetadata(t *testing.T) *trigger.Metadata {
 
 const testConfig string = `{
   "id": "flogo-channel",
-  "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/channel",
+  "ref": "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/channel",
   "handlers": [
     {
       "settings": {

@@ -1,8 +1,11 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package filter
 
-
 type NonZeroFilter struct {
-
 }
 
 func (*NonZeroFilter) FilterOut(val interface{}) bool {

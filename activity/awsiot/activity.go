@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package awsiot
 
 import (
@@ -9,7 +14,6 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 )
 

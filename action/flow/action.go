@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package flow
 
 import (
@@ -10,21 +15,22 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/instance"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
-	_ "github.com/TIBCOSoftware/flogo-contrib/action/flow/model/simple"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/tester"
 	"github.com/TIBCOSoftware/flogo-lib/app/resource"
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"github.com/TIBCOSoftware/flogo-lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
+	_ "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model/simple"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/tester"
 )
 
 const (
-	FLOW_REF = "github.com/TIBCOSoftware/flogo-contrib/action/flow"
+	FLOW_REF = "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow"
 
 	ENV_FLOW_RECORD = "FLOGO_FLOW_RECORD"
 )
@@ -56,7 +62,7 @@ var manager *support.FlowManager
 var maxStepCount = 1000000
 
 //todo fix this
-var metadata = &action.Metadata{ID: "github.com/TIBCOSoftware/flogo-contrib/action/flow", Async: true}
+var metadata = &action.Metadata{ID: "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow", Async: true}
 
 func init() {
 	action.RegisterFactory(FLOW_REF, &ActionFactory{})

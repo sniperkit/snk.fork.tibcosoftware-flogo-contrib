@@ -1,10 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package window
 
 import (
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/aggregate/window/functions"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/aggregate/window/functions"
 )
 
 //note:  using interface{} 4x slower than using specific types, starting with interface{} for expediency

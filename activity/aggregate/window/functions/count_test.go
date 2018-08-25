@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package functions
 
 import (
@@ -13,5 +18,5 @@ func TestAddSampleCount(t *testing.T) {
 	x = AddSampleCount(x, "second")
 	x = AddSampleCount(x, "third")
 
-	assert.Equal(t,3, x)
+	assert.Equal(t, 3, x)
 }

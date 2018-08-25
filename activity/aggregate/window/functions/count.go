@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package functions
 
 func AddSampleCount(a, b interface{}) interface{} {

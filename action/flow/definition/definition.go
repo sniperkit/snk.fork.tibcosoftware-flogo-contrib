@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package definition
 
 import (
@@ -5,7 +10,7 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	//"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
+	//"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 // Definition is the object that describes the definition of

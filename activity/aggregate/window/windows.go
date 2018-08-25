@@ -1,32 +1,36 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package window
 
 import (
 	"fmt"
-	"time"
-	"strings"
 	"strconv"
+	"strings"
+	"time"
 )
 
 type Settings struct {
-	Size               int
-	Resolution         int
-	ExternalTimer      bool
+	Size          int
+	Resolution    int
+	ExternalTimer bool
 
 	TotalCountModifier int
 }
 
-func (s *Settings) SetAdditionalSettings( as map[string]string) error {
+func (s *Settings) SetAdditionalSettings(as map[string]string) error {
 
 	for key, value := range as {
 		if strings.ToLower(key) == "totalcountmodifier" {
 			//todo should we return an error?
-			s.TotalCountModifier, _ =  strconv.Atoi(value)
+			s.TotalCountModifier, _ = strconv.Atoi(value)
 		}
 	}
 
 	return nil
 }
-
 
 ///////////////////
 // Tumbling Window
@@ -102,7 +106,7 @@ func (w *TumblingTimeWindow) AddSample(sample interface{}) (bool, interface{}) {
 
 		//todo what do we do if this greatly exceeds the nextEmit time?
 		if currentTime >= w.nextEmit {
-			w.nextEmit = + w.settings.Size // size == time in millis
+			w.nextEmit = +w.settings.Size // size == time in millis
 			return w.NextBlock()
 		}
 	}

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package inference
 
 import (
@@ -5,11 +10,11 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/framework/tf"
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/framework/tf"
 )
 
 var _ tf.TensorflowModel

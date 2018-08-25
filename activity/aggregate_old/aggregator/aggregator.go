@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package aggregator
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"sync"
+
+	"github.com/TIBCOSoftware/flogo-lib/logger"
 )
 
 type Aggregator interface {

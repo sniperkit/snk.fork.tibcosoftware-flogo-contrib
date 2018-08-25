@@ -1,9 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package simple
 
 import (
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 func TestRegistered(t *testing.T) {

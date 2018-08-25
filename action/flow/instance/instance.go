@@ -1,15 +1,21 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
 	"fmt"
 	"strconv"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/model"
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )
 
 type Instance struct {
@@ -132,7 +138,7 @@ func (inst *Instance) GetResolver() data.Resolver {
 	return definition.GetDataResolver()
 }
 
-func (inst *Instance) GetError() ( error) {
+func (inst *Instance) GetError() error {
 	return inst.returnError
 }
 

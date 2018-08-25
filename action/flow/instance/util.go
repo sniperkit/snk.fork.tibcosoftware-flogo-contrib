@@ -1,12 +1,18 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package instance
 
 import (
 	"errors"
 
-	"github.com/TIBCOSoftware/flogo-contrib/action/flow/support"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
 )
 
 func applyInputMapper(taskInst *TaskInst) error {

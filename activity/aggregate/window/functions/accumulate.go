@@ -1,5 +1,9 @@
-package functions
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
 
+package functions
 
 func AddSampleAccum(a, b interface{}) interface{} {
 
@@ -15,7 +19,6 @@ func AddSampleAccum(a, b interface{}) interface{} {
 
 	return accum
 }
-
 
 func AggregateBlocksAccumulate(blocks []interface{}, start int, size int) interface{} {
 

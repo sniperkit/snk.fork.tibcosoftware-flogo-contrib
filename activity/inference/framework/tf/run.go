@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package tf
 
 import (
 	"fmt"
 
-	models "github.com/TIBCOSoftware/flogo-contrib/activity/inference/model"
 	"github.com/golang/protobuf/proto"
 	tf "github.com/tensorflow/tensorflow/tensorflow/go"
+
+	models "github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/model"
 )
 
 // Run is used to execute a Tensorflow model with the model input data

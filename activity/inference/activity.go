@@ -1,14 +1,20 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package inference
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/framework"
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/framework/tf"
-	"github.com/TIBCOSoftware/flogo-contrib/activity/inference/model"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/framework"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/framework/tf"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/activity/inference/model"
 )
 
 var _ tf.TensorflowModel
