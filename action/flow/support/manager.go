@@ -16,9 +16,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/TIBCOSoftware/flogo-lib/app/resource"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-lib/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/app/resource"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/linker"

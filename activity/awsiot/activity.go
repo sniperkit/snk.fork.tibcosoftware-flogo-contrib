@@ -12,8 +12,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 )
 

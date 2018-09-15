@@ -12,13 +12,13 @@ import (
 	//"time"
 	"io/ioutil"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/action"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/action"
 
-	//"github.com/TIBCOSoftware/flogo-lib/core/trigger"
+	//"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/trigger"
 	"encoding/json"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/trigger"
 )
 
 var jsonTestMetadata = getTestJsonMetadata()
@@ -68,7 +68,7 @@ const testConfig2 string = `{
     {
       "flowURI": "local://testFlow2",
       "settings": {
-      	"notImmediate": "false",
+        "notImmediate": "false",
         "repeating": "true",
         "seconds": "5"
       }
@@ -141,14 +141,14 @@ func TestInit(t *testing.T) {
 //TODO fix this test
 func TestTimer(t *testing.T) {
 
-	// New  factory
-	f := &TimerFactory{}
-	tgr := f.New("flogo-timer")
+  // New  factory
+  f := &TimerFactory{}
+  tgr := f.New("flogo-timer")
 
-	tgr.Start()
-	time.Sleep(time.Second * 2)
-	defer tgr.Stop()
+  tgr.Start()
+  time.Sleep(time.Second * 2)
+  defer tgr.Stop()
 
-	log.Debug("Test timer done")
+  log.Debug("Test timer done")
 }
 */

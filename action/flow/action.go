@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-lib/app/resource"
-	"github.com/TIBCOSoftware/flogo-lib/core/action"
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-lib/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/app/resource"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/action"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"

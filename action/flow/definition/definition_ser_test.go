@@ -10,8 +10,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+
 	"github.com/stretchr/testify/assert"
 )
 
@@ -21,33 +22,33 @@ func init() {
 
 const defJSON = `
 {
-	"id":"DemoFlow",
+  "id":"DemoFlow",
     "name": "Demo Flow",
     "model": "simple",
     "attributes": [
       { "name": "petInfo", "type": "string", "value": "blahPet" }
     ],
-	"tasks": [
-	{
-	  "id":"LogStart",
-	  "activity" : {
-	    "ref":"log",
+  "tasks": [
+  {
+    "id":"LogStart",
+    "activity" : {
+      "ref":"log",
         "input" : {
            "message" : "Find Pet Flow Started!"
         }
       }
-	},
-	{
-	  "id": "LogResult",
-	  "name": "Log Results",
-	  "activity" : {
-	    "ref":"log",
+  },
+  {
+    "id": "LogResult",
+    "name": "Log Results",
+    "activity" : {
+      "ref":"log",
         "input" : {
            "message" : "REST results"
         },
         "mappings" : {
           "input": [
-		    { "type": 1, "value": "petInfo", "result": "message" }
+        { "type": 1, "value": "petInfo", "result": "message" }
           ]
         }
       }
@@ -71,7 +72,7 @@ const oldDefJSON = `
       "id": 1,
       "type": 1,
       "name": "root",
-	  "activityRef": "",
+    "activityRef": "",
       "tasks": [
         {
           "id": 2,

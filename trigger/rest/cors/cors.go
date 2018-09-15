@@ -13,7 +13,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 )
 
 const (

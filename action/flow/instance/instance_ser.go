@@ -8,8 +8,8 @@ package instance
 import (
 	"encoding/json"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/model"
 )

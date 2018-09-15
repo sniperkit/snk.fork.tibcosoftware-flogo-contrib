@@ -6,7 +6,7 @@ Sniperkit-Bot
 package support
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
 )
 
 // Interceptor contains a set of task interceptor, this can be used to override

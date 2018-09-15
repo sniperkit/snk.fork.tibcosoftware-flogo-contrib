@@ -9,13 +9,6 @@ import (
 	"io/ioutil"
 )
 
-//"encoding/json"
-//"net/http"
-//"testing"
-
-//"net/http"
-//"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-
 var jsonTestMetadata = getTestJsonMetadata()
 
 func getTestJsonMetadata() string {
@@ -48,35 +41,35 @@ const testConfig string = `{
 // TODO Fix this test
 
 func TestHandlerOk(t *testing.T) {
-	config := trigger.Config{}
-	json.Unmarshal([]byte(testConfig), &config)
+    config := trigger.Config{}
+    json.Unmarshal([]byte(testConfig), &config)
 
-	// New  factory
-	f := &CoapFactory{}
-	tgr := f.New(&config)
+    // New  factory
+    f := &CoapFactory{}
+    tgr := f.New(&config)
 
-	runner := &TestRunner{}
+    runner := &TestRunner{}
 
-	tgr.Init(runner)
+    tgr.Init(runner)
 
-	tgr.Start()
-	defer tgr.Stop()
+    tgr.Start()
+    defer tgr.Stop()
 
-	uri := "http://127.0.0.1:5683/device/12345/reset"
+    uri := "http://127.0.0.1:5683/device/12345/reset"
 
-	req, err := http.NewRequest("POST", uri, nil)
+    req, err := http.NewRequest("POST", uri, nil)
 
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		panic(err)
-	}
-	defer resp.Body.Close()
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    if err != nil {
+        panic(err)
+    }
+    defer resp.Body.Close()
 
-	log.Debug("response Status:", resp.Status)
+    log.Debug("response Status:", resp.Status)
 
-	if resp.StatusCode >= 300 {
-		t.Fail()
-	}
+    if resp.StatusCode >= 300 {
+        t.Fail()
+    }
 }
 */

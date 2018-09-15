@@ -8,7 +8,7 @@ package aggregator
 import (
 	"sync"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 )
 
 type Aggregator interface {

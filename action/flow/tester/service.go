@@ -9,9 +9,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-lib/util"
 	"github.com/julienschmidt/httprouter"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/service"

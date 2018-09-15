@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
 )

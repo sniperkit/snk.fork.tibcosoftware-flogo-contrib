@@ -6,10 +6,10 @@ Sniperkit-Bot
 package actreply
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/core/mapper"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/mapper"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 )
 
 // log is the default package logger

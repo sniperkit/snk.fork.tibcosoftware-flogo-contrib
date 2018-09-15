@@ -12,11 +12,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+
 	"github.com/mongodb/mongo-go-driver/bson"
 	"github.com/mongodb/mongo-go-driver/bson/objectid"
 	"github.com/mongodb/mongo-go-driver/mongo"
+
 	"github.com/stretchr/testify/assert"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"

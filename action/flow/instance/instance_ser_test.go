@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
@@ -118,24 +118,24 @@ func TestChangeSerialization(t *testing.T) {
 
 //func TestIncrementalSerialization(t *testing.T) {
 //
-//	defRep := &flowdef.DefinitionRep{}
-//	json.Unmarshal([]byte(defJSON), defRep)
+//  defRep := &flowdef.DefinitionRep{}
+//  json.Unmarshal([]byte(defJSON), defRep)
 //
-//	idGen, _ := util.NewGenerator()
-//	id := idGen.NextAsString()
+//  idGen, _ := util.NewGenerator()
+//  id := idGen.NextAsString()
 //
-//	def, _ := flowdef.NewDefinition(defRep)
+//  def, _ := flowdef.NewDefinition(defRep)
 //
-//	instance := NewFlowInstance(id, "uri2", def)
+//  instance := NewFlowInstance(id, "uri2", def)
 //
-//	instance.Start(nil)
+//  instance.Start(nil)
 //
-//	hasWork := true
+//  hasWork := true
 //
-//	for hasWork && instance.Status() < StatusCompleted {
-//		hasWork = instance.DoStep()
+//  for hasWork && instance.Status() < StatusCompleted {
+//    hasWork = instance.DoStep()
 //
-//		json, _ := json.Marshal(instance.GetChanges())
-//		log.Debugf("Changes: %s\n", string(json))
-//	}
+//    json, _ := json.Marshal(instance.GetChanges())
+//    log.Debugf("Changes: %s\n", string(json))
+//  }
 //}

@@ -11,9 +11,9 @@ import (
 	"flag"
 	syslog "log"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/trigger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 
 	// Import the aws-lambda-go. Required for dep to pull on app create
 	_ "github.com/aws/aws-lambda-go/lambda"

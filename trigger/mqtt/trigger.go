@@ -11,9 +11,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/trigger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+
 	"github.com/eclipse/paho.mqtt.golang"
 )
 

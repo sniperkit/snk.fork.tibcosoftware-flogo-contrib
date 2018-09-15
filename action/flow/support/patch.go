@@ -6,7 +6,7 @@ Sniperkit-Bot
 package support
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
 )
 
 // Patch contains a set of task patches for a Flow Patch, this

@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
@@ -284,7 +284,7 @@ func TestGosLinkExprManager_EvalLinkExprOld(t *testing.T) {
 
 	//result, err = mgr.EvalLinkExpr(link2, scope)
 	//if err != nil {
-	//	t.Fatalf("Error evaluating expressions '%s'", err.Error())
+	//  t.Fatalf("Error evaluating expressions '%s'", err.Error())
 	//}
 	//fmt.Printf("Link 2 Result: %v\n", result)
 	//assert.True(t, result)
@@ -321,7 +321,7 @@ func TestGosLinkExprManager_EvalLinkExprOld(t *testing.T) {
 
 	//result, err = mgr.EvalLinkExpr(link6, scope)
 	//if err != nil {
-	//	t.Fatalf("Error evaluating expressions '%s'", err.Error())
+	//  t.Fatalf("Error evaluating expressions '%s'", err.Error())
 	//}
 	//
 	//fmt.Printf("Link6 Result: %v\n", result)

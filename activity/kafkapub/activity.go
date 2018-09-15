@@ -16,8 +16,9 @@ import (
 	"sync"
 
 	"github.com/Shopify/sarama"
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 )
 
 // log is the default package logger

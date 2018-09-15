@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-lib/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/definition"
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"

@@ -6,6 +6,7 @@ Sniperkit-Bot
 package model
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -15,7 +16,7 @@ import (
 
 // Framework interface used to implement specific ml framework implementations
 type Framework interface {
-	Load(modelPath string, modelFile string, model *Model) (err error)
+	Load(model *Model, flags ModelFlags) (err error)
 	Run(model *Model) (out map[string]interface{}, err error)
 	FrameworkTyp() string
 }
@@ -28,22 +29,50 @@ type Model struct {
 	Inputs   map[string]map[string]interface{}
 }
 
-func Load(modelArchive string, framework Framework) (*Model, error) {
+// ModelFlags Contains flags to add to metadata and to aid in loading
+type ModelFlags struct {
+	Tag       string
+	SigDef    string
+	ModelFile string
+	ModelPath string
+}
+
+// Load is unzipping the file and then passing it to be read
+func Load(modelArchive string, framework Framework, flags ModelFlags) (*Model, error) {
 	f, _ := os.Open(modelArchive)
 	defer f.Close()
 	var outDir string
 	if fi, err := f.Stat(); err == nil && fi.IsDir() {
 		outDir = modelArchive
-	} else {
+	} else if err == nil && !fi.IsDir() {
 		tmpDir := os.TempDir()
 		outDir = filepath.Join(tmpDir, utils.PseudoUuid())
 		if err := utils.Unzip(modelArchive, outDir); err != nil {
 			return nil, fmt.Errorf("Failed to extract model archive: %v", err)
 		}
+	} else {
+		return nil, fmt.Errorf("%s does not exist", modelArchive)
 	}
 
+	modelFilename := filepath.Join(outDir, "saved_model.pb")
+	if _, err := os.Stat(modelFilename); err != nil {
+		// This if is here for when we can read pbtxt files
+		if _, err2 := os.Stat(modelFilename + "txt"); err2 == nil {
+			modelFilename = modelFilename + "txt"
+			return nil, errors.New("Currently loading saved_model.pbtxt is not supported")
+			//comment the return when we can read pbtxt
+		} else {
+			return nil, errors.New("saved_model.pb does not exist")
+		}
+	}
+
+	flags.ModelPath = outDir
+	flags.ModelFile = modelFilename
 	var model Model
-	framework.Load(outDir, filepath.Join(outDir, "saved_model.pb"), &model)
+	err := framework.Load(&model, flags)
+	if err != nil {
+		return nil, err
+	}
 
 	return &model, nil
 }

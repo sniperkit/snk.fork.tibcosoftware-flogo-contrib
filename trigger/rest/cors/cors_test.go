@@ -13,7 +13,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+
 	"github.com/stretchr/testify/assert"
 )
 

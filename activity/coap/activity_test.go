@@ -6,14 +6,10 @@ Sniperkit-Bot
 package coap
 
 import (
-	//"encoding/json"
-	//"fmt"
+	"io/ioutil"
 	"testing"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-
-	//"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/test"
-	"io/ioutil"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
 )
 
 var activityMetadata *activity.Metadata

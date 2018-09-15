@@ -8,10 +8,10 @@ package tester
 import (
 	"context"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/action"
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/engine/runner"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/action"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/engine/runner"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/instance"
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"

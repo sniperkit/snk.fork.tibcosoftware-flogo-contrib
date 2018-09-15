@@ -15,9 +15,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/trigger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+
 	"github.com/julienschmidt/httprouter"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/trigger/rest/cors"

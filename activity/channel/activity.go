@@ -8,10 +8,10 @@ package channel
 import (
 	"fmt"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/core/data"
-	"github.com/TIBCOSoftware/flogo-lib/engine/channels"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/activity"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/data"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/engine/channels"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 )
 
 // activityLogger is the default logger for the Channel Activity

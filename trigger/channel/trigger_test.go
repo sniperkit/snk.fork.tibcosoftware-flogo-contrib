@@ -11,10 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/action"
-	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/flogo-lib/engine/channels"
-	"github.com/TIBCOSoftware/flogo-lib/util/test"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/action"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/trigger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/engine/channels"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util/test"
+
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,7 +6,7 @@ Sniperkit-Bot
 package instance
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/support"
 )

@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/flogo-lib/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/logger"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/util"
 
 	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-contrib/action/flow/service"
 )

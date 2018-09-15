@@ -6,7 +6,7 @@ Sniperkit-Bot
 package linker
 
 import (
-	"github.com/TIBCOSoftware/flogo-lib/core/mapper/exprmapper/expression/function"
+	"github.com/sniperkit/snk.fork.tibcosoftware-flogo-lib/core/mapper/exprmapper/expression/function"
 )
 
 type IsDefine struct {
